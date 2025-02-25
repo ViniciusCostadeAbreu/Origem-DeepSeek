@@ -7,7 +7,7 @@
 
 
 :root{
-    --cor0:#f1e9bb; 
+    --cor0:#ebe3bb; 
     --cor1:#617dfc;
     --cor2:#386AA3;
     --cor3:#2660F5;
@@ -27,6 +27,10 @@
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
 }
 
 header{
@@ -111,6 +115,14 @@ main img{
     width: 100%;
     border-radius: 10px 10px;
 }
+main a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--cor4);
+}
+main a:hover{
+    text-decoration: underline;
+}
 
 div.video{
     background-color: var(--cor4);
@@ -126,4 +138,19 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 
+}
+
+footer{
+    font-family: var(--fonte-secundaria);
+    font-weight: 400px;
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
 }
